@@ -19,7 +19,9 @@ const Button = ({backgroundColor, type, hover, setValue}) => {
             if(type === '='){
                 setValue((value)=>{
                     return String(eval(value));
+
                 })
+                return
             }
 
         setValue((value)=>{
